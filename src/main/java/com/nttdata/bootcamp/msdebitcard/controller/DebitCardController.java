@@ -1,7 +1,6 @@
 package com.nttdata.bootcamp.msdebitcard.controller;
 
 import com.nttdata.bootcamp.msdebitcard.application.DebitCardService;
-import com.nttdata.bootcamp.msdebitcard.dto.DebitCardDto;
 import com.nttdata.bootcamp.msdebitcard.model.DebitCard;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
