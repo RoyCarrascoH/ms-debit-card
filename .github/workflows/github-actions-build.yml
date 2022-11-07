@@ -1,8 +1,8 @@
 on:
  push:
-   branches: [main]
+   branches: [master]
  pull_request:
-   branches: [main]
+   branches: [master]
 
 jobs:
  build:
@@ -23,7 +23,7 @@ jobs:
   - name: Publish to Docker Hub
     uses: docker/build-push-action@v1
     with:
-      username: ${{ secrets.DOCKER_USERNAME }}
+      username: ${{ secrets.roycarrascoh }}
       password: ${{ secrets.DOCKER_PASSWORD }}
-      repository: juniorhr/ms-debit-card
+      repository: RoyCarrascoH/ms-debit-card
       tags: ${{ github.run_number }}
